@@ -85,6 +85,8 @@ Check containers:
 docker compose ps
 ```
 
+PostgreSQL is exposed on the host at `127.0.0.1:5433` by default to avoid conflicts with a locally installed PostgreSQL on port `5432`. Inside Docker, n8n still connects to the `postgres` service on port `5432`.
+
 Validate the Compose configuration:
 
 ```bash
